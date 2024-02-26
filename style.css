@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "Urbit Sans ";
+  src: url(fonts/UrbitSans-Medium.woff2), url(fonts/UrbitSans-Medium.woff);
+}
+
+@font-face {
+  font-family: "Urbit Sans Mono";
+  src: url(fonts/UrbitSans-RegularMono.woff2),
+    url(/fonts/UrbitSans-RegularMono.woff);
+}
+
+@font-face {
+  font-family: "Urbit Sans";
+  src: url(fonts/UrbitSans-Regular.woff2), url(fonts/UrbitSans-Regular.woff);
+}
+
+html {
+  background-color: #fff32a;
+  width: 100%;
+  font-family: "Urbit Sans";
+  font-size: 24px;
+}
+
+body {
+  width: 80%;
+
+  max-width: 650px;
+  height: 100vh;
+  margin-top: 2.5%;
+}
+
+u {
+  text-underline-offset: 0.25em;
+}
+
+hr.solid {
+  display: grid;
+  border-top: 3px solid #000;
+}
+
+.tilde-section {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+}
+
+.tilde {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container {
+  width: 64px;
+}
+
+.title-section {
+  grid-column: 2/15;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-line {
+  margin-bottom: 8px;
+}
+
+.text {
+  grid-column: 2/14;
+}
+
+#title {
+  font-size: 72px;
+  font-family: "Urbit Sans";
+  grid-column: 2/12;
+  margin-bottom: 12px;
+}
+
+#urbit-atom {
+  grid-column-end: 15;
+}
+
+#divider-line {
+  grid-column: 2/15;
+  border-top: 2.5px solid black;
+  margin-bottom: 24px;
+}
+
+.ascii-art {
+  margin-bottom: 36px;
+}
+
+.author {
+  grid-column: 2/6;
+  font-family: "Urbit Sans Mono";
+}
+
+.article-title {
+  grid-column: 8/15;
+}
+
+#top-line {
+  margin-bottom: 48px;
+}
+
+.items {
+  padding-bottom: 36px;
+}
+
+.ascii-line {
+  grid-column: 2/15;
+  font-family: "Urbit Sans Mono";
+  overflow-x: hidden;
+  display: block;
+  white-space: pre;
+  margin-bottom: 12px;
+}
